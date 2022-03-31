@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box; 
 }
+
+body {
+    background-repeat: no-repeat;
+}
+
+header {
+    font-size: 2.0em;
+    color: gold;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-family: 'Satisfy', cursive;
+}
+
+.w3-container {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.top a {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    color: black;
+    font-size: 2.5em;
+    margin-left: 475px;
+    
+}
+
+.middle a {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    color: black;
+    font-size: 2.5em;
+    margin-left: 900px;
+}
+
+.bottom a {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    color: black;
+    font-size: 2.5em;
+    margin-left: 750px;
+    margin-bottom: 10px;
+}
+
+.spacer {
+    padding: 85px;
+    content: "";
+}
