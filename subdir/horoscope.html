@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&family=Satisfy&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../subdir/assets/horoscope.css">
+=======
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/horoscope.css">
+>>>>>>> main
     <title>horoscopes</title>
 </head>
 
@@ -18,8 +25,9 @@
     <header class="flexbox">
         <h1>Please choose your sign to see your horoscope for today!</h1>
         <div class="dropdown">
-            <button class="dropbtn">Choose Your Sign Here!</button>
+            <button class="dropbtn" onclick="getHoroscope()">Choose Your Sign Here!</button>
             <div class="dropdown-content">
+<<<<<<< HEAD
                 <a href="#">Cancer</a>
                 <a href="#">Gemini</a>
                 <a href="#">Libra</a>
@@ -40,6 +48,38 @@
     </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/horoscope.js"></script>
+=======
+                <a onclick="getHoroscope('Cancer')">Cancer</a>
+                <a onclick="getHoroscope('Gemini')">Gemini</a>
+                <a onclick="getHoroscope('Libra')">Libra</a>
+                <a onclick="getHoroscope('Virgo')">Virgo</a>
+                <a onclick="getHoroscope('Taurus')">Taurus</a>
+                <a onclick="getHoroscope('Aries')">Aries</a>
+                <a onclick="getHoroscope('Pisces')">Pisces</a>
+                <a onclick="getHoroscope('Aquarius')">Aquarius</a>
+                <a onclick="getHoroscope('Sagittarius')">Sagittarius</a>
+                <a onclick="getHoroscope('Leo')">Leo</a>
+                <a onclick="getHoroscope('Capricorn')">Capricorn</a>
+                <a onclick="getHoroscope('Scorpio')">Scorpio</a>
+        </div>
+    </div>    
+    
+</header>
+<body background>
+
+<!----------dynamically generate horoscope placeholder------------>
+    <div id="horoscope" class="horoscope-text">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/horoScript.js"></script>
+>>>>>>> main
 </body>
 
 </html>

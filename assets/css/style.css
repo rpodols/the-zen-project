@@ -1,13 +1,17 @@
+/* Main stylesheet */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
 
+/* style for background image */
 body {
     background-repeat: no-repeat;
 }
 
+/* style for main text on page */
 h1 {
     font-size: 5.0em;
     color: gold;
@@ -24,6 +28,7 @@ p {
     font-size: 1.6em;
 }
 
+/* container holding menu links */
 .w3-container {
     display: block;
     margin-top: 250px;
@@ -31,7 +36,7 @@ p {
 }
 
 
-
+/* Start menu links styling */
 .top a {
     text-decoration: overline;
     text-decoration-color: gold;
@@ -56,7 +61,9 @@ p {
     padding: 50px;
     content: "";
 }
+/* End menu styling */
 
+/* Media query styling */
 @media screen and (max-width: 1024px) {
     body {
         background-size: auto;
@@ -180,5 +187,4 @@ p {
             padding: 30px;
         }
     }
-
-        /* ------------- CSS for Horoscope Page ------------ */
+        /* End Stylesheet */
