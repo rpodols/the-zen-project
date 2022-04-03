@@ -1,3 +1,6 @@
+
+
+
 // Local storage for horoscope
 function setLinks() {
     var savedSign = document.getElementsByClassName("dropdown-content").innerHTML;
@@ -16,9 +19,6 @@ window.onload = function() {
 window.onunload = function() {
     setLinks();
 }
-
-
-
 
 
 /*var mailChimpApiKey = "15983a1116a19961b677deabe1852fd6";

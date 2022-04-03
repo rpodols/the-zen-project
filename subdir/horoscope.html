@@ -14,20 +14,20 @@
 <header class="flexbox">
     <h1>Please choose your sign to see your horoscope for today!</h1>
         <div class="dropdown">
-            <button class="dropbtn">Choose Your Sign Here!</button>
+            <button class="dropbtn" onclick="getHoroscope()">Choose Your Sign Here!</button>
             <div class="dropdown-content">
-                <a href="#">Cancer</a>
-                <a href="#">Gemini</a>
-                <a href="#">Libra</a>
-                <a href="#">Virgo</a>
-                <a href="#">Taurus</a>
-                <a href="#">Aries</a>
-                <a href="#">Pisces</a>
-                <a href="#">Aquarius</a>
-                <a href="#">Sagittarius</a>
-                <a href="#">Leo</a>
-                <a href="#">Capricorn</a>
-                <a href="#">Scorpio</a>
+                <a onclick="getHoroscope('Cancer')">Cancer</a>
+                <a onclick="getHoroscope('Gemini')">Gemini</a>
+                <a onclick="getHoroscope('Libra')">Libra</a>
+                <a onclick="getHoroscope('Virgo')">Virgo</a>
+                <a onclick="getHoroscope('Taurus')">Taurus</a>
+                <a onclick="getHoroscope('Aries')">Aries</a>
+                <a onclick="getHoroscope('Pisces')">Pisces</a>
+                <a onclick="getHoroscope('Aquarius')">Aquarius</a>
+                <a onclick="getHoroscope('Sagittarius')">Sagittarius</a>
+                <a onclick="getHoroscope('Leo')">Leo</a>
+                <a onclick="getHoroscope('Capricorn')">Capricorn</a>
+                <a onclick="getHoroscope('Scorpio')">Scorpio</a>
         </div>
     </div>    
     
@@ -35,7 +35,7 @@
 <body background>
 
 <!----------dynamically generate horoscope placeholder------------>
-    <div class="horoscope-text">
+    <div id="horoscope" class="horoscope-text">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
@@ -43,5 +43,8 @@
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/horoScript.js"></script>
 </body>
 </html>
