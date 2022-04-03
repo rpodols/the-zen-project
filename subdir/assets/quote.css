@@ -4,6 +4,13 @@ body {
 a {
     text-decoration: none;
 }
+#add-quote {
+    font-size: 2.5em;
+    color: #3a3a3a;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+}
 h1 {
     font-size: 5.0em;
     color: #3a3a3a;
@@ -28,15 +35,28 @@ h3 {
 img {
     width: 33%;
 }
-hr {
+.hr1 {
     background-color:#3a3a3a;
     color: #3a3a3a;
     margin-top: -8%;
 }
+hr {
+    background-color:#3a3a3a;
+    color: #3a3a3a;
+}
 p {
     text-align: center;
 }
-button {
+h4 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-quote {
     margin-top: 20%;
     background-color:#d3d3d3;
     color: #3a3a3a;
@@ -45,7 +65,18 @@ button {
     font-size: 1.0em;
     box-shadow: 4px 8px black;
 }
-button:hover {
+.user-button-quote {
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1em;
+    padding: 1%;
+}
+.submit-quote-button {
+    background-color: #d3d3d3;
+    color: black;
+}
+button:hover,
+.submit-quote-button:hover {
     background-color: #d5b33c
 }
 #lotus-pic {
@@ -70,5 +101,22 @@ button:hover {
     border-width: 3px;
     border-color: #3a3a3a;
     margin: 5%;
-
+}
+#user-submitted-quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote-container {
+        background-color: white;
+        padding: 2.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #3a3a3a;
+        margin: 5%;
 }

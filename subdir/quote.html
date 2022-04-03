@@ -16,7 +16,7 @@
     <div id="quote-page-container">
         <div id="zen-header">
             <h1>Inspirational Quote</h1>
-            <hr>
+            <hr class="hr1">
             <div>
                 <h3>Come back daily for a new inspirational quote!</h3>
             </div>
@@ -29,9 +29,24 @@
         <div id="lotus-pic">
             <img src="./assets/lotusbg.png" alt="Lotus flower image.">
         </div>
+        <div id="user-submitted-quote-container">
+            <h4>Want more inspiration?  Click the button below to generate a user submitted inspiration quote, or add one of your own!</h4>
+            <button id="submit-quote-button" class="user-button-quote">Click here for a user submitted inspiration quote!</button>
+            <div id="submitted-quote"></div>
+            <form id="user-form">
+                <h4 id="add-quote">Add some inspiration - </h4>
+                <label>Quote:</label>
+                <input id="user-quote" size="60" type="text"><br>
+                <div id="user-quote"></div>
+                <label>Submitted By:</label>
+                <input id="user-quote-by" type="text"><br>
+                <input id="user-submit" class="submit-quote-button" type="submit" value="Submit">
+            </form>
+        </div>
+
         <div id="nav-buttons">
-            <button onclick="location.href='../index.html';">Home</button>
-            <button onclick="location.href='./horoscope.html';">Horoscopes</button>
+            <button class="button-quote" onclick="location.href='../index.html';">Home</button>
+            <button class="button-quote" onclick="location.href='./horoscope.html';">Horoscopes</button>
         </div>
         <a href = "../index.html"><h2>The Zen Project</h2></a>
     </div>
