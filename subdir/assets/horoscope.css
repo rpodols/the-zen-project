@@ -83,6 +83,20 @@ header {
 }
 /* hover styling ends */
 
+/* div styling for horoscope generated text */
+.horoscope-text {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.horoscope-text p {
+    font-size: 1.5em;
+    font-family: 'Courgette', cursive;
+    color: black;
+    font-family: 'Amaranth', sans-serif;
+}
+
+
 /* media query styling starts */
 
 @media screen and (max-width: 980px) {
@@ -113,8 +127,18 @@ header {
     .dropdown-content {
         margin-left: 0;
         min-width: 110px;
-        }
     }
+
+    .horoscope-text {
+        display: flex;
+        margin-top: 300px;
+    }
+    .horoscope-text p {
+        font-size: 1.3em;
+        color: azure;
+        margin-bottom: 5px;
+    }
+}
 
     @media screen and (max-width: 480px) {
         header {
@@ -145,6 +169,40 @@ header {
         .dropdown-content a {
             font-size: 10px;
         }
+    
+
+        .horoscope-text {
+            display: flex;
+            margin-top: 75px;
+        }
+
+        .horoscope-text p {
+            font-size: 1.0em;
+        }
+    }
+        
+        @media screen and (max-width: 1280px) {
+            .horoscope-text {
+            display: flex;
+            margin-top: 200px;
+        }
     }
 
+        @media screen and (max-width: 280px) {
+            .horoscope-text {
+                display: flex;
+                margin-top: 100px;
+            }
+
+            .horoscope-text p {
+                font-size: 0.8em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .horoscope-text {
+                display: flex;
+                margin-top: 300px;
+            }
+        }
         /* end stylesheet */
