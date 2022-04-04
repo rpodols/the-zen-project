@@ -17,8 +17,6 @@ window.onunload = function() {
     setLinks();
 }
 
-// quote javascript start
-
 //variables to grab the time/date
 var DateTime = luxon.DateTime;
 var localTime = DateTime.local();
@@ -40,7 +38,6 @@ var getZenQuotes = function() {
                 var quoteAuthor = (data[currentQuoteIndex].author);
                 var quoteTextEl = $("<p>").text(quoteText);
                 var quoteAuthorEl = $("<p>").text("- " + quoteAuthor); 
-                //$(quoteTextEl).append(quoteAuthorEl);
                 $("#current-quote-info").append(quoteTextEl);
                 $("#current-quote-info").append(quoteAuthorEl);
             })
@@ -63,8 +60,6 @@ var submitQuote = function() {
     var selectedNewAuthor = savedQuotes[number].name;
     var selectedNewQuote = savedQuotes[number].quote;
 
-    //var selectedQuote = "And if we got the chance, to see the rough draft.  I bet the early plans would make us laugh. And it never seems to help when we try to intervene, some things are better left unseen.";
-    //var selectedAuthor = "Trey Anastasio";
     var selectedQuoteEl = $("<p>").text(selectedNewQuote);
     var selectedAuthorEl = $("<p>").text("- " + selectedNewAuthor);
     var submitteddivEl = $("<div>").addClass("quote-container").attr("id", "user-sub-quote");
@@ -74,22 +69,17 @@ var submitQuote = function() {
 }
 
 //saving user submitted quote
-//$("#user-quote").val(localStorage.getItem("9desc"));
-
-//user-quote-by
 $("#user-submit").click(function(event) {
     event.preventDefault();
     if ($("#user-quote").val() == "") {
-        console.log(1);
-        var errorMsg = $("<h5>").text("Please enter a quote.");
-        $("#user-quote").append(errorMsg);
+        var errorMsg = "Please enter a quote.";
+        $("#error").text(errorMsg);
         
     } else if ($("#user-quote-by").val() == "") {
-        console.log(2);
-        var errorMsg = $("<h5>").text("Please enter your name.");
-        $("user-quote-by").append(errorMsg);
+        var errorMsg = "Please enter your name.";
+        $("#error").text(errorMsg);
     } else {
-        console.log(3);
+        $("#error").text("");
         $("#user-quote").empty();
         $("#user-quote-by").empty();
         var savedQuotes = jQuery.parseJSON(localStorage.getItem("quote")) ?? [];
