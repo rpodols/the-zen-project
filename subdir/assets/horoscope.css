@@ -96,6 +96,39 @@ header {
     font-family: 'Amaranth', sans-serif;
 }
 
+.button-one, .button-two {
+    margin-top: 30%;
+    background-color:#d3d3d3;
+    color: #3a3a3a;
+    border-color:#3a3a3a;
+    border-radius: 45%;
+    font-size: 1.0em;
+    box-shadow: 4px 8px black;
+}
+
+
+.button-one:hover {
+    background-color: #d5b33c
+}
+
+.button-two:hover {
+    background-color: #d5b33c;
+}
+
+.bottom-nav {
+    text-align: center;
+}
+
+.bottom-nav p {
+    margin-top: 20px;
+    font-size: 3.0em;
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+}
+
+
 
 /* media query styling starts */
 
