@@ -1,0 +1,74 @@
+body {
+    background-color: #d3d3d3;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 5.0em;
+    color: #3a3a3a;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+}
+h2 {
+    font-size: 3.0em;
+    color: #d5b33c;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+}
+h3 {
+    color: #3a3a3a;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    -webkit-text-stroke-color: #d5b33c;
+    -webkit-text-stroke-width: .5px; 
+}
+img {
+    width: 33%;
+}
+hr {
+    background-color:#3a3a3a;
+    color: #3a3a3a;
+    margin-top: -8%;
+}
+p {
+    text-align: center;
+}
+button {
+    margin-top: 20%;
+    background-color:#d3d3d3;
+    color: #3a3a3a;
+    border-color:#3a3a3a;
+    border-radius: 45%;
+    font-size: 1.0em;
+    box-shadow: 4px 8px black;
+}
+button:hover {
+    background-color: #d5b33c
+}
+#lotus-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quote-page-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#current-quote-info {
+    background-color: white;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #3a3a3a;
+    margin: 5%;
+
+}
