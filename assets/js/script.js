@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 
 
@@ -25,7 +23,6 @@ window.onunload = function() {
 
 /*var mailChimpApiKey = "15983a1116a19961b677deabe1852fd6";
 var zenQuotesUrl = "https://type.fit/api/quotes";
->>>>>>> main
 
 
 
