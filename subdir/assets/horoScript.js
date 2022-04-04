@@ -1,5 +1,5 @@
 //for horoscope api response and call
-var sign = "cancer";//defult sign
+var sign;//defult to break sign, and test in get links
 var horoscope;
 var luckyNum;
 var color;
@@ -12,24 +12,11 @@ var ttslang = '&hl=en-us&src=';
 var textArea = document.getElementById("horoscope");
 
 
-// Local storage for horoscope
-function setLinks() {
-    var savedSign = document.getElementsByClassName("dropdown-content").innerHTML;
-    localStorage.setItem("savedLinkHTML", savedSign);
-}
 
-function getLinks() {
-    var savedSign = localStorage.getItem("savedLinkHTML");
-    if(savedSign) document.getElementsByClassName("dropdown-content").innerHTML = savedSign;
-}
-
-window.onload = function() {
+window.onload = function(){
     getLinks();
 }
 
-window.onunload = function() {
-    setLinks();
-}
 
 
 
@@ -42,6 +29,7 @@ function getHoroscope(sign){
             horoscope = data.description;
             color = data.color;
             luckyNum = data.lucky_number;
+            localStorage.setItem("sign",horoscope)
             showHoroscope(horoscope, luckyNum, color);
             speakHoroscope(horoscope);
         }
@@ -63,4 +51,14 @@ function speakHoroscope(horoscope){
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
     xmlHttp.send(null);
+}
+
+
+
+function getLinks() {
+    let savedSign = localStorage.getItem("lastSearch");
+    console.log(savedSign);
+    if(savedSign != "test"){
+        getHoroscope(savedSign);
+    }
 }
