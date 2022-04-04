@@ -31,13 +31,7 @@ window.onunload = function() {
     setLinks();
 }
 
-/*$.ajax({
-    type:'POST',
-    url:'https://aztro.sameerkumar.website?sign='+ sign +'&day=today',
-    success:function(data){
-    console.log(data);
-    }
-});*/
+
 
 function getHoroscope(sign){
     $.ajax({

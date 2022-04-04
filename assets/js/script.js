@@ -20,6 +20,31 @@ window.onunload = function() {
     setLinks();
 }
 
+
+/*var mailChimpApiKey = "15983a1116a19961b677deabe1852fd6";
+var zenQuotesUrl = "https://type.fit/api/quotes";
+
+
+
+// Local storage for horoscope
+function setLinks() {
+    var savedSign = document.getElementsByClassName("dropdown-content").innerHTML;
+    localStorage.setItem("savedLinkHTML", savedSign);
+}
+
+function getLinks() {
+    var savedSign = localStorage.getItem("savedLinkHTML");
+    if(savedSign) document.getElementsByClassName("dropdown-content").innerHTML = savedSign;
+}
+
+window.onload = function() {
+    getLinks();
+}
+
+window.onunload = function() {
+    setLinks();
+}*/
+
 //variables to grab the time/date
 var DateTime = luxon.DateTime;
 var localTime = DateTime.local();
