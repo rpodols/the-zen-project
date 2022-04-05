@@ -4,10 +4,6 @@ var horoscope;
 var luckyNum;
 var color;
 
-//for text to speech api
-var tts = 'http://api.voicerss.org/?';
-var ttskey = 'c724add3cb6d43a09e00a1115e5babff';
-var ttslang = '&hl=en-us&src=';
 
 var textArea = document.getElementById("horoscope");
 
@@ -29,9 +25,8 @@ function getHoroscope(sign){
             horoscope = data.description;
             color = data.color;
             luckyNum = data.lucky_number;
-            localStorage.setItem("sign",horoscope)
+            localStorage.setItem("sign",sign);
             showHoroscope(horoscope, luckyNum, color);
-            speakHoroscope(horoscope);
         }
     });
     $(this).parent().hide();
@@ -39,26 +34,12 @@ function getHoroscope(sign){
 }
 
 function showHoroscope(horoscope, luckyNum, color){
-    textArea.innerHTML = "<p>"+ "Your horoscope is, "+"<br>"+horoscope +"<br>"+ "Your lucky Number for today is "+ luckyNum + "<br>"+"Your color for today is "+ color+"</p>";
+    textArea.innerHTML = "<p>"+ "Your horoscope is, "+"<br>"+horoscope +"<br>"+ "Your lucky Number for today is <span STYLE='font-weight:bold'>"+ luckyNum + "</span> <br>"+"Your color for today is <span>"+ color+"</span></p>";
 
 }
-
-function speakHoroscope(horoscope){
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
-    xmlHttp.send(null);
-}
-
-
 
 function getLinks() {
-    let savedSign = localStorage.getItem("lastSearch");
+    let savedSign = localStorage.getItem("sign");
     console.log(savedSign);
-    if(savedSign != "test"){
-        getHoroscope(savedSign);
-    }
+    getHoroscope(savedSign);
 }
