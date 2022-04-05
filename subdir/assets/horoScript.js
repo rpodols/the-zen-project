@@ -34,7 +34,7 @@ function getHoroscope(sign){
 }
 
 function showHoroscope(horoscope, luckyNum, color){
-    textArea.innerHTML = "<p>"+ "Your horoscope is, "+"<br>"+horoscope +"<br>"+ "Your lucky Number for today is <span STYLE='font-weight:bold'>"+ luckyNum + "</span> <br>"+"Your color for today is <span>"+ color+"</span></p>";
+    textArea.innerHTML = "<p>"+ "Your horoscope is, "+"<br>"+"<span STYLE='font-weight:bold'>"+horoscope+"</span>" +"<br>"+ "Your lucky Number for today is <span STYLE='font-weight:bold'>"+ luckyNum + "</span> <br>"+"Your color for today is <span STYLE='font-weight:bold'>"+ color+"</span></p>";
 
 }
 
