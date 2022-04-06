@@ -11,8 +11,8 @@ so that I can feel uplifted on days that I feel down.
 HTML, CSS, JavaScript, jQuery
 APIs - Luxon (time), Aztro (horoscope), Type.Fit (quotes)
 ## Participants and Roles:
-Jennie - homepage and horoscope page HTML, CSS
-Max - horoscope page JavaScript and HTML
+Jennie - homepage and horoscope page HTML, CSS <br />
+Max - horoscope page JavaScript and HTML<br />
 Ryan - quote page JavaScript, HTML, and CSS
 ## Website Link:
 https://rpodols.github.io/the-zen-project/index.html
