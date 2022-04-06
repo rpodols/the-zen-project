@@ -12,14 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./assets/horoscope.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/horoscope.css">
             <title>horoscopes</title>
 </head>
 
 <body background>
     <header class="flexbox">
-        <h1>Please choose your sign to see your horoscope for today!</h1>
-        <div class="dropdown">
+            <h1>Please choose your sign to see your horoscope for today!</h1>
+        <div class="dropdown" >
             <button class="dropbtn" onclick="getHoroscope()">Choose Your Sign Here!</button>
             <div class="dropdown-content">
                 <a onclick="getHoroscope('Cancer')">Cancer</a>
@@ -35,25 +38,32 @@
                 <a onclick="getHoroscope('Capricorn')">Capricorn</a>
                 <a onclick="getHoroscope('Scorpio')">Scorpio</a>
             </div>
-        </div>
-
-    </header>
+         </div>
+      </header>
 
 
     <!----------dynamically generate horoscope placeholder------------>
-    <div id="horoscope" class="horoscope-text">
-        <p>
-            
-        </p>
+    
+    <div id="horoscope" class="horoscope">
+        
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br>
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br>
+            occaecat cupidatat non proident,<br>
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
     </div>
-    <footer>
+    <div class="lotus">
+    <img src="./assets/lotusbg.png" alt="Lotus flower image." style="float:right;">
+    </div>
         <div class="horoscope-text">
             <button class="button-one" onclick="location.href='../index.html';">Home</button>
             <button class="button-two" onclick="location.href='./quote.html';">Quotes</button>
             <p>The Zen Project</p>
         </div>
-    </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/horoScript.js"></script>
