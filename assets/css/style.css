@@ -1,7 +1,7 @@
 /* Main stylesheet */
 
 * {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     box-sizing: border-box; 
 }
@@ -21,10 +21,12 @@ h1 {
 }
 
 p {
-    color: gold;
+    color: black;
     font-family: 'Courgette', cursive;
     float: right;
-    margin-right: 40px;
+    position: absolute;
+    left: 58%;
+    top: 5%;
     font-size: 1.6em;
 }
 
@@ -43,7 +45,9 @@ p {
     color: black;
     font-size: 2.5em;
     font-weight: bold;
-    margin-left: 850px;
+    position: absolute;
+    left: 65%;
+    top: 35%;
     
 }
 
@@ -53,18 +57,15 @@ p {
     color: black;
     font-size: 2.5em;
     font-weight: bold;
-    margin-left: 850px;
-    margin-bottom: 10px;
+    position: absolute;
+    left: 68%;
+    top: 55%;
 }
 
-.spacer {
-    padding: 50px;
-    content: "";
-}
 /* End menu styling */
 
 /* Media query styling */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 992px) {
     body {
         background-size: auto;
         background-color: black;
@@ -79,114 +80,207 @@ p {
         padding-left: 5px;
     }
 
-    .w3-container {
-        position: relative;
-    }
+    
 
     p {
-        font-size: 2.0em;
-        padding-left: 10px;
-        margin-right: 700px;
-        width: 800px;
+        position: absolute;
+        top: 35%;
+        left: 2%;
         color: azure;
+        font-size: 1.6em;
     }
 
-    .top, .bottom {
-        margin-left: 10px;
+    .bottom {
+        position: absolute;
+        top: 165%;
     }
 
-    .top a, .bottom a {
-        text-decoration-color: black;
-        margin-left: 0px;
-        color: azure;
-        text-align: left;
-    }
-
-    .spacer {
-        padding: 30px;
+    .top a {
+        position: absolute;
+            top: 120%;
+            left: 0%;
+            -ms-transform: translate(-0%, -120%);
+            transform: translate(-0%, -120%);
+            font-size: 2.3em;
+            color: gold;
+            text-decoration-color: black;
     }
     
+    .bottom a {
+        position: absolute;
+            top: 135%;
+            left: 0%;
+            -ms-transform: translate(-0%, -135%);
+            transform: translate(-0%, -135%);
+            font-size: 2.3em;
+            color: gold;
+            text-decoration-color: black;
+    }
 }
 
+    @media scteen and (max-width: 1024px) {
+        h1 {
+            margin-left: 5px;
+            margin-bottom: 5px;
+            font-size: 4.0em;
+            padding-bottom: 20px;
+            padding-left: 5px;
+        }
+    
+        
+    
+        p {
+            position: absolute;
+            top: 35%;
+            left: 2%;
+            color: azure;
+            font-size: 1.6em;
+        }
+    
+        .bottom {
+            position: absolute;
+            top: 165%;
+        }
+    
+        .top a {
+            position: absolute;
+                top: 120%;
+                left: 0%;
+                -ms-transform: translate(-0%, -120%);
+                transform: translate(-0%, -120%);
+                font-size: 2.3em;
+                color: gold;
+                text-decoration-color: black;
+        }
+        
+        .bottom a {
+            position: absolute;
+                top: 135%;
+                left: 75%;
+                -ms-transform: translate(-75%, -135%);
+                transform: translate(-75%, -135%);
+                font-size: 2.3em;
+                color: gold;
+                text-decoration-color: black;
+        }
+    }
     
 
-    @media screen and (max-width: 768px) {
-        body {
-            position: absolute;
-        }
+    @media screen and (max-width: 600px) {
         
         h1 {
             font-size: 5em;
         }
 
-        .w3-container {
-            height: 100px;
-            width: 100px;
-        
-        }
-
         p {
-            margin-right: 400px;
+            position: absolute;
+            top: 35%;
+            left: 2%;
             color: azure;
         }
 
-        .top {
-            width: 200px;
-            height: 100px;
-        
-        }
-
-        .spacer {
-            padding: 0px;
-        }
-
         .bottom {
-            width: 200px;
-            height: 300px;
+            position: absolute;
+            top: 130%;
         }
         
         .top a {
-            margin-right: 1000px;
-            font-size: 2.0em;
+            position: absolute;
+            top: 55%;
+            left: 0%;
+            -ms-transform: translate(-0%, -55%);
+            transform: translate(-0%, -55%);
+            font-size: 2.3em;
             color: gold;
             text-decoration-color: black;
         
         }
 
         .bottom a {
-            margin-right: 900px;
-            font-size: 2.0em;
+            position: absolute;
+            top: 120%;
+            left: 0%;
+            -ms-transform: translate(-0%, -0%);
+            transform: translate(-0%, -0%);
+            font-size: 2.3em;
             color: gold;
             text-decoration-color: black;
         }
-
     }
 
     @media screen and (max-width: 480px) {
-        body {
-            position: absolute;
-        }
+        
         
         h1 {
-            font-size: 1.5;
+            font-size: 2.5em;
         }
 
         p {
+            position: absolute;
+            top: 25%;
+            left: 0%;
             color: azure;
+            font-size: 1.0em;
         }
 
-        .top, .bottom {
-            margin-left: 50px;
+        .top a {
+            position: absolute;
+            left: 0%;
+            top: 85%;
+            -ms-transform: translate(-0%, -85%);
+            transform: translate(-0%, -85%);
             font-size: 1.5em;
         }
 
-        .w3-container {
-            width: fit-content;
-            height: fit-content;
+        .bottom a {
+            position: absolute;
+            left: 0%;
+            top: 125%;
+            -ms-transform: translate(-0%, -125%);
+            transform: translate(-0%, -125%);
+            font-size: 1.5em;
         }
 
-        .spacer {
-            padding: 30px;
+        .bottom {
+            position: absolute;
+            top: 115%;
         }
     }
+
+        @media screen and (max-width: 540px) {
+            h1 {
+                font-size: 2.5em;
+            }
+    
+            p {
+                position: absolute;
+                top: 25%;
+                left: 0%;
+                color: azure;
+                font-size: 1.0em;
+            }
+    
+            .top a {
+                position: absolute;
+                left: 0%;
+                top: 85%;
+                -ms-transform: translate(-0%, -85%);
+                transform: translate(-0%, -85%);
+                font-size: 1.5em;
+            }
+    
+            .bottom a {
+                position: absolute;
+                left: 0%;
+                top: 125%;
+                -ms-transform: translate(-0%, -125%);
+                transform: translate(-0%, -125%);
+                font-size: 1.5em;
+            }
+    
+            .bottom {
+                position: absolute;
+                top: 115%;
+            }
+        }
         /* End Stylesheet */
