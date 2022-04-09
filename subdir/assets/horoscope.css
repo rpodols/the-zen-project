@@ -165,6 +165,7 @@ body {
             margin-right: 50px;
             margin-bottom: 150px;
             font-size: 2.4em;
+            padding: 1rem;
         }
         
         .dropbtn {
@@ -223,6 +224,7 @@ body {
 
             .horoscope {
                 margin: 145px 255px 150px 45px;
+                padding: 1rem;
             }
         }
 
@@ -254,6 +256,7 @@ body {
                 width: 75%;
                 margin: 145px 250px 150px 75px;
                 font-size: 1.4em;
+                padding: 1rem;
             
             }
         }
@@ -292,6 +295,7 @@ body {
                 height: 200px;
                 width: 75%;
                 margin: 75px 200px 75px 43px;
+                padding: 1rem;
             }
         }
 
@@ -322,6 +326,7 @@ body {
             .horoscope {
                 font-size: 1.0em;
                 margin: 100px 225px 100px 30px;
+                padding: 1rem;
             }
         }
 
